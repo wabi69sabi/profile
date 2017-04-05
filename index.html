@@ -4,31 +4,51 @@
     <title>Basic info</title>
 
     <!-- Google fonts -->
-    <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed" rel="stylesheet">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:400,300,700|Montserrat:400,700">
+    <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Open+Sans:400,300,700|Montserrat:400,700">
 
     <!-- Fontawesome -->
-    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
+    <link href="http://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
 
     <!-- Your style -->
     <link rel="stylesheet" href="style.css">
   </head>
   <body>
-    <div class="container">
-      <div class="card text-center">
-        <img id="img-border" src="images/image.resized.jpeg" class="img-circle">
-        <h1>Some dude I found... when googling my name</h1>
-        <h2>Student @Le Wagon</h2>
+    <div id="sidebar">
+      <ul>
+        <li class="sidebar-oval">
+          <a href="#summary">
+            <i class="fa fa-info"></i>
+          </a>
+        </li>
+        <li class="sidebar-oval">
+          <a href="#favorite-things">
+            <i class="fa fa-thumbs-up"></i>
+          </a>
+        </li>
+        <li class="sidebar-oval">
+          <a href="#footer">
+            <i class="fa fa-anchor"></i>
+          </a>
+        </li>
+      </ul>
+    </div>
+    <div id="content">
+      <!-- your page content here -->
+      <div class="container">
+        <div id="summary" class="card text-center">
+          <img id="img-border" src="images/image.resized.jpeg" class="img-circle">
+          <h1>Some dude I found... when googling my name</h1>
+          <h2>Student @Le Wagon</h2>
 
-        <p>
-          After 2 years at the UC... again, I decided that I really
-          don't like math.
-          <p> My mission:
-          <strong>to not throw away everything I have learned so far and stay in IT</strong>.
+          <p>
+            After 2 years at the UC... again, I decided that I really
+            don't like math.
+            <p> My mission:
+            <strong>to not throw away everything I have learned so far and stay in IT</strong>.
+            </p>
           </p>
-        </p>
-        <a class="fancy-btn" href="http://lewagon.com">Where I'm learning to code</a>
-      </div>
+          <a class="fancy-btn" href="http://lewagon.com">Where I'm learning to code</a>
+        </div>
 
       <div class="card text-center">
 
@@ -52,7 +72,7 @@
         <p class="text-right">--> Click this</p>
       </div>
 
-      <div class="card text-center">
+      <div id="favorite-things" class="card text-center">
         <h2>My Favorite things:</h2>
 
         <table>
@@ -90,10 +110,11 @@
         </table>
       </div>
 
-      <div class="card text-center">
+      <div id="footer" class="card text-center">
         <h2>About this page</h2>
         This page has been coded during the <a href="http://lewagon.org/program" target="_blank">FullStack program @LeWagon.</a>
       </div>
+    </div>
     </div>
   </body>
 </html>

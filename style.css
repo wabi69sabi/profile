@@ -1,11 +1,18 @@
 /* Here goes your CSS */
 body {
-  background: rgb(235, 235, 235);
+  /*background: rgb(235, 235, 235);*/
+  background-image: url("images/background1.jpeg");
+  /*background-size: 2100px;*/
+  background-attachment: fixed;
   /*font-family: 'Open Sans', sans-serif;*/
   font-family: 'Roboto Condensed', sans-serif, helvetica;
   font-weight: 300;
   font-size: 16px;
   line-height: 1.5em;
+}
+
+.background {
+
 }
 
 h1, h2, h3, h4 {
@@ -102,4 +109,34 @@ p {
 .text-right {
   text-align: right;
   padding-right: 250px;
+}
+
+#sidebar {
+  position: fixed;
+  width: auto;
+  left: 0;
+  top: 0;
+  bottom: 0;
+}
+
+.sidebar-oval {
+  background-color: white;
+  padding: 15px;
+  margin: 15px;
+  border-radius: 25px;
+  box-shadow: 2px 2px 1px #BB42C9;
+  display: block;
+  text-align: center;
+}
+
+#summary {
+  margin-left: 30px;
+}
+
+#favorite-movies {
+  margin-left: 30px;
+}
+
+#footer {
+  margin-left: 30px;
 }
